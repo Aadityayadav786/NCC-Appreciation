@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Appreciation</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom right, rgb(255, 119, 0), rgb(255, 255, 255), rgb(15, 84, 0));
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .header img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .center img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .center h1, .center h3, .center h4, .center h2, .center p {
+            margin: 10px 0;
+        }
+
+        #image2 img, #image3 img {
+            max-width: 70%;
+            height: auto;
+        }
+
+        #image4 p {
+            text-align: justify;
+        }
+
+        #clock {
+            font-size: 40px;
+            background-color: rgb(0, 0, 138);
+            color: white;
+            padding: 20px 50px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header img {
+                max-width: 70px;
+            }
+
+            #image2 img, #image3 img {
+                max-width: 100%;
+            }
+
+            #clock {
+                font-size: 30px;
+                padding: 15px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div id="logo2">
+            <img src="ncc.jpg" alt="NCC Logo">
+        </div>
+        <div id="logo1">
+            <img src="gov.jfif" alt="Government Logo">
+        </div>
+    </div>
+    <div class="center">
+        <h1>भारत अपने 77वें स्वतंत्रता दिवस पर गौरव की अपनी अद्भुत यात्रा का जश्न मना रहा है।</h1>
+        <h1>इस अवधि में देश की सेवा करने वाले सभी एनसीसी कैडेटों को धन्यवाद</h1>
+        <h1>आपका भविष्य बहुत अच्छा है.</h1>
+        <h1>Respected Cadet Ananya Dey</h1>
+        <h3>We Salute your efforts everyday! Wishing You all the best!</h3>
+        <div id="image1">
+            <img src="profile.jfif" alt="Profile Picture">
+            <p>Name: CDT ANANYA DEY SOUMITRA DEY A</p>
+            <p>MP22SWA330565</p>
+        </div>
+        <div id="image2">
+            <img src="armygirl.jpg" alt="Army Girl">
+            <h3>एनसीसी के तहत आयोजित विभिन्न शिविरों और गतिविधियों में भाग लेने के लिए धन्यवाद। हम अपने संगठन में आपकी बहुमूल्य उपस्थिति पाकर प्रसन्न हैं</h3>
+            <h4>Lt. Gen. Gurbirpal Singh, National Cadet Corps (NCC)</h4>
+        </div>
+        <div id="image3">
+            <img src="IMG_20240716_012213 (1).jpg" alt="Achievement Image">
+            <h2>We applause you for making us proud by winning at different levels</h2>
+        </div>
+        <div id="image4">
+            <p>
+                Ministry of Defence <br>
+                Government of India <br>
+                Date: 16/07/24 <br><br>
+                To,<br>
+                Cadet Ananya Dey,<br>
+                National Cadet Corps (NCC)<br><br>
+                Letter of Appreciation for Outstanding Contribution to Social Service and Community Activities<br><br>
+                Dear Cadet Ananya Dey,<br><br>
+                On behalf of the Government of India and the National Cadet Corps (NCC), it is with immense pride and pleasure that we extend our heartfelt appreciation to you for your invaluable contributions and unwavering dedication to social service, blood donation, and sports activities.
+                Your commitment to the welfare of society, exemplified through your active participation in various initiatives, is truly commendable. Your role as a traffic mitra has greatly contributed to the smooth management of traffic during critical events, ensuring the safety and convenience of the public. Additionally, your enthusiastic involvement in the Global Investment Summit has significantly highlighted the importance of youth engagement in nation-building activities.
+                Your efforts in organizing and participating in plantation drives have not only contributed to the preservation of our environment but also inspired many others to follow your lead. Furthermore, your selfless act of blood donation has provided a lifeline to those in need, showcasing your compassion and sense of social responsibility.<br><br>
+                The Government of India and the NCC recognize and deeply appreciate your tireless efforts, dedication, and the positive impact you have made in various spheres. Your achievements stand as a testament to the core values of the NCC, and you are a role model for your peers and future cadets.<br><br>
+                Once again, we extend our sincere gratitude and appreciation for your exemplary service to the community. We wish you continued success in all your future endeavors.<br><br>
+                With warm regards,<br>
+                <img src="rajnath.jfif" alt="Rajnath Singh Signature" style="max-width: 100px;"><br>
+                Rajnath Singh<br>
+                Ministry of Defence<br>
+                Government of India
+            </p>
+        </div>
+        <div id="banner"><span>Jai Hind! Celebrating 77th Independence Day</span></div>
+        <div id="clock"></div>
+    </div>
+
+    <script>
+        const clock = document.getElementById("clock");
+
+        setInterval(function() {
+            let date = new Date();
+            clock.innerHTML = date.toLocaleTimeString();
+        }, 1000);
+    </script>
+</body>
+</html>
